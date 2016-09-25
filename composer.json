@@ -1,0 +1,11 @@
+{
+	"autoload":{
+		"psr-4":{
+			"LOG\\":"src/"
+		}
+	},
+	"require": {
+        "psr/log": "^1.0.1"
+    }
+	
+}
