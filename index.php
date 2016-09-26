@@ -14,3 +14,4 @@ $dbase->log("ALERT", $w);
 
 $std = LoggerFactory::createStdOutLogger("log");
 $std->log("ALERT", $w);
+$std->log("ALERT", $w);

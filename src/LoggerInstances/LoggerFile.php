@@ -53,9 +53,6 @@ class LoggerFile implements LoggerInterface
     
     // Имя журнала
     protected $name;
-    
-    // Накапливаемые строки
-    protected $lines = array();
 
     // Создаем закрытый конструктор
     private function __construct($name, $fname)
@@ -85,7 +82,7 @@ class LoggerFile implements LoggerInterface
         return self::$loggers[$fname] = new self($name, $fname);
     }
 
-    function __destruct()
+    public function __destruct()
     {   
     }
     

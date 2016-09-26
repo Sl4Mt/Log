@@ -78,7 +78,7 @@ class LoggerStdOut implements LoggerInterface
         return self::$loggers[$name] = new self($name);
     }
 
-    function __destruct()
+    public function __destruct()
     {
     }
     
